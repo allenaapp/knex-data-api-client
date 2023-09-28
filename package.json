@@ -42,7 +42,6 @@
   "devDependencies": {
     "@aws-cdk/aws-rds": "^1.161.0",
     "@aws-cdk/core": "^1.161.0",
-    "aws-sdk": "^2.1161.0",
     "chai": "4.3.6",
     "dotenv": "16.0.1",
     "eslint": "8.18.0",
