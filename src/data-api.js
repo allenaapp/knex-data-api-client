@@ -1,10 +1,10 @@
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable no-param-reassign */
 
-const dataApiClient = require('data-api-client');
 const util = require('util');
 const Bluebird = require('bluebird');
 
+const dataApiClient = require('./data-api-client');
 const DataAPITransaction = require('./data-api-transaction');
 const sqlstring = require('./sqlstring');
 const types = require('./types');
