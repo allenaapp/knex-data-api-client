@@ -1,5 +1,4 @@
-'use strict'
-
+'use strict';
 /*
  * This module provides a simplified interface into the Aurora Serverless
  * Data API by abstracting away the notion of field values.
@@ -14,7 +13,7 @@
 
 // Require the aws-sdk. This is a dev dependency, so if being used
 // outside of a Lambda execution environment, it must be manually installed.
-const AWS = require('aws-sdk')
+const { RDSData } = require('@aws-sdk/client-rds-data');
 
 // Require sqlstring to add additional escaping capabilities
 const sqlString = require('sqlstring')
@@ -596,7 +595,7 @@ const init = (params) => {
 
     // TODO: Put this in a separate module for testing?
     // Create an instance of RDSDataService
-    RDS: params.AWS ? new params.AWS.RDSDataService(options) : new AWS.RDSDataService(options)
+    RDS: params.AWS ? new params.AWS.RDSDataService(options) : new RDSData(options)
   } // end config
 
   // Return public methods
