@@ -1,6 +1,6 @@
 # knex-aurora-data-api-client
 
-Knex Aurora Data API Client
+Knex Data API Client
 
 [![npm](https://img.shields.io/npm/v/knex-aurora-data-api-client.svg)](https://www.npmjs.com/package/knex-aurora-data-api-client)
 [![npm](https://img.shields.io/npm/l/knex-aurora-data-api-client.svg)](https://www.npmjs.com/package/knex-aurora-data-api-client)
